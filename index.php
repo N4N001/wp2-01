@@ -45,7 +45,7 @@
     <input type="number" min="0" id="amount" name="amount"> <label for="amount"> Částka </label>
      </br>
     <input type="radio" name="currency" id="czk_eur" value="czk_eur"> <label for="currency"> České Koruny na Euro</label> </br>
-    <input type="radio" name="currency" id="eur_czk" value="eur_czk"> <lavel for="currency"> Euro na České Koruny </lavel>
+    <input type="radio" name="currency" id="eur_czk" value="eur_czk"> <label for="currency"> Euro na České Koruny </label>
   </select>
   </br>
   </br>
