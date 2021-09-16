@@ -42,7 +42,7 @@
      else {?>
     <h1>Převod měn CZK, EUR</h1>
     <form method="post">
-    <input type="number" id="amount" name="amount"> <label for="amount"> Částka </label>
+    <input type="number" min="0" id="amount" name="amount"> <label for="amount"> Částka </label>
      </br>
     <input type="radio" name="currency" id="czk_eur" value="czk_eur"> <label for="currency"> České Koruny na Euro</label> </br>
     <input type="radio" name="currency" id="eur_czk" value="eur_czk"> <lavel for="currency"> Euro na České Koruny </lavel>
