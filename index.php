@@ -8,8 +8,10 @@
 </head>
 <body>
 <?php   $submit = filter_input(INPUT_POST, 'submit');
+        $radio = filter_input(INPUT_POST, 'currency');
+   if(isset($submit)&&(isset($radio)))
    
-   if(isset($submit)) {
+   {
     $amount = $_POST['amount'];
     $currency = $_POST['currency'];
     
@@ -24,7 +26,15 @@
         }
                 
         $result = $amount * $exchange_rate;
-        echo "$result"; 
+        
+        if ($currency == "czk_eur")
+        {
+            echo "$amount KČ je $result EUR";
+            }
+        if ($currency == "eur_czk")
+        {
+            echo "$amount EUR je $result KČ";
+            }
 
    }
 
